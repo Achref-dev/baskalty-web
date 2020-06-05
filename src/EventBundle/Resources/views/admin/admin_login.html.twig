@@ -1,0 +1,25 @@
+{% extends 'back.html.twig' %}
+
+{% block body %}
+    <br><br>
+<div class="wrapper mm-page mm-slideout" id="mm-0">
+    <section class="popular-job bgc-fa">
+        <div class="container">
+
+        <form action="{{ path("fos_user_security_check") }}" method="post">
+
+            <label for="username">Username</label>
+            <input class="form-control" type="text" id="username" name="_username" required="required" autocomplete="username" />
+
+            <label for="password">Password</label>
+            <input class="form-control" type="password" id="password" name="_password" required="required" autocomplete="current-password" />
+
+
+            <input class="btn btn-primary" type="submit" id="_submit" name="_submit" value="Login" />
+            <br><br>
+        </form>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
